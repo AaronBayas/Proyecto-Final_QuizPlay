@@ -1,0 +1,210 @@
+@keyframes neon {
+  0% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #af00ca, 0 0 70px #7c5f8a;
+  }
+  30% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #af00ca, 0 0 70px #7c5f8a, 0 0 80px #af00ca;
+  }
+  60% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #af00ca, 0 0 70px #7c5f8a, 0 0 80px #af00ca, 0 0 100px #af00ca;
+  }
+  100% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #af00ca, 0 0 70px #7c5f8a, 0 0 80px #af00ca, 0 0 100px #af00ca;
+  }
+}
+
+#root {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+}
+
+.join-div {
+  margin: 5% auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #af00ca;
+  border-radius: 10px;
+  background: linear-gradient(rgba(4, 6, 61, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/vector-gratis/diseno-patron-signo-interrogacion-degradado_23-2149423893.jpg?w=740&t=st=1704175059~exp=1704175659~hmac=66f71f49e9ea08078a91370b0cfcfe68e26e2b916a658d24c1d2423c1a65a20f') center/cover;
+  animation: neon 2.0s infinite alternate;
+  -webkit-animation: neon 2.0s infinite alternate;
+}
+
+input {
+  padding: 5px;
+  font-size: medium;
+  border-radius: 10px;
+  border: 2px solid #620096; /* Color del borde */
+}
+
+.join-message-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+.join-message {
+  background-color: #840e6e;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.h1 {
+  animation: neon 0.1s infinite alternate;
+  -webkit-animation: neon 0.1s infinite alternate;
+}
+
+.join-btn {
+  animation: neon-btn 5.1s infinite alternate;
+  -webkit-animation: neon-btn 5.1s infinite alternate;
+}
+
+@keyframes neon-btn {
+  0% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #620096, 0 0 70px #4a3770;
+  }
+  30% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #620096, 0 0 70px #4a3770, 0 0 80px #620096;
+  }
+  60% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #620096, 0 0 70px #4a3770, 0 0 80px #620096, 0 0 100px #620096;
+  }
+  100% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #620096, 0 0 70px #4a3770, 0 0 80px #620096, 0 0 100px #620096;
+  }
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #333333;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  height: 100%;
+  min-width: 200px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid #b77dfd;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #9b18b2;
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+button:hover {
+  border-color: #5c5858;
+  color: #242424;
+  background-color: #b77dfd;
+}
+
+input,
+.join-btn {
+  margin: 5%;
+  width: 60%;
+  height: 30px;
+  outline: none;
+}
+
+.join-btn {
+  height: auto;
+  border: 2px solid #620096; /* Color del borde */
+}
+
+.quiz-div {
+  margin: 5% auto;
+  width: 100%;
+  background-color: rgba(234, 158, 255, 0.14);
+  border: 2px solid #620096; /* Color del borde */
+  border-radius: 10px;
+  background: linear-gradient(rgba(28, 3, 57, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/free-vector/school-background-flat-design_23-2148587752.jpg?w=996&t=st=1704176494~exp=1704177094~hmac=fceaa1dd3f53af7fb776926f8f19649be5514e36c65103665a4c7fb170e558ab') center/cover;
+  animation: neon 2.0s infinite alternate;
+  -webkit-animation: neon 2.0s infinite alternate;
+}
+
+.room-id {
+  font-size: 30px;
+  margin-top: -30px;
+  font-weight: bold;
+}
+
+.quiz-div {
+  height: max-content;
+  padding: flex;
+  border: 2px solid #620096;
+  /*Colordelborde*/border-radius: 10px;
+  /*Bordesredondeados*/font-weight: bold;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  -ms-border-radius:10px;
+  -o-border-radius:10px;
+}
+
+.question {
+  font-size: 20px;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.question-text {
+  margin: 5px auto;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 50%;
+  margin: 15px auto;
+  border: 2px solid #620096; /* Color del borde */
+}
+
+.options {
+  width: 100%;
+}
+
+.selected {
+  background-color: #b77dfd;
+  color: #fff;
+  border: 2px solid #b77dfd; /* Color del borde */
+}

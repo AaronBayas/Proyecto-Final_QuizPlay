@@ -1,0 +1,186 @@
+@import url('https://fonts.cdnfonts.com/css/games');
+
+.join-message-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+.join-message {
+  background-color: #701582;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  animation: neon 3.1s infinite alternate;
+  -webkit-animation: neon 3.1s infinite alternate;
+}
+
+@keyframes neon {
+  0% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #af00ca, 0 0 70px #7c5f8a;
+  }
+  30% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #af00ca, 0 0 70px #7c5f8a, 0 0 80px #af00ca;
+  }
+  60% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #af00ca, 0 0 70px #7c5f8a, 0 0 80px #af00ca, 0 0 100px #af00ca;
+  }
+  100% {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #af00ca, 0 0 70px #7c5f8a, 0 0 80px #af00ca, 0 0 100px #af00ca, 
+  }
+}
+.join-btn {
+  animation: neon 3.1s infinite alternate;
+  -webkit-animation: neon 3.1s infinite alternate;
+}
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #333333;
+
+  
+  
+ 
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+p{
+  font-size: 30px;
+  margin-top: 10px;
+  font-weight: bold; 
+}
+.image-container {
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 50%;
+  height: 10%;
+  object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+}
+
+body {
+ background-image: url(https://img.freepik.com/vector-gratis/prueba-neon_1262-19629.jpg?w=1380&t=st=1704166082~exp=1704166682~hmac=21d7e805f7138ae679b50f1ea2f4edfe02e492db4e5be29960db185280ba0a60);
+background-repeat: auto;
+background-position: center;
+background-size: cover;
+min-height: 100vh;
+  margin: 0;
+  display: flex;
+  height: 100%;
+  min-width: 90px;
+  min-height: 100vh;
+  background: linear-gradient(rgba(52, 6, 91, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/vector-gratis/prueba-neon_1262-19629.jpg?w=1380&t=st=1704166082~exp=1704166682~hmac=21d7e805f7138ae679b50f1ea2f4edfe02e492db4e5be29960db185280ba0a60') center/cover;
+  animation: neon 2.0s infinite alternate;
+  -webkit-animation: neon 2.0s infinite alternate;
+
+}
+
+
+h1 {
+  font-family: 'Games', sans-serif;
+
+  font-size: 5.9em;
+  line-height: 1.1;
+  text-shadow: 0 0 10px #554d4d, 0 0 20px #000000, 0 0 30px #fff, 0 0 40px #af00ca, 0 0 40px #cb65db, 0 0 70px #7c5f8a;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid #b77dfd;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #242424;
+ 
+  cursor: pointer;
+  color: #fff;
+  transition: background-color 0.25s, border-color 0.25s
+}
+button:hover {
+  
+  border-color: #242424;
+  color: #242424;
+  background-color: #b77dfd;
+}
+.welcome-div {
+  text-align: center;
+}
+
+.welcome-div button {
+  margin: 25px;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  font-size: 28px;
+}
+/* Agrega estilos a la clase winner-container */
+.winner-container {
+  margin: 5% auto;
+  width: 70%; /* Cambié el ancho a 80% para mayor adaptabilidad */
+  max-width: 500px; /* Agregué un ancho máximo para evitar que se extienda demasiado en pantallas grandes */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #af00ca;
+  border-radius: 10px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/vector-gratis/diseno-patron-signo-interrogacion-degradado_23-2149423893.jpg?w=740&t=st=1704175059~exp=1704175659~hmac=66f71f49e9ea08078a91370b0cfcfe68e26e2b916a658d24c1d2423c1a65a20f') center/cover;
+  animation: neon 2.0s infinite alternate;
+  -webkit-animation: neon 2.0s infinite alternate;
+}
+
+@keyframes neon {
+  from {
+    box-shadow: 0 0 10px #bb6bc7, 0 0 20px #af00ca, 0 0 30px #af00ca;
+  }
+  to {
+    box-shadow: 0 0 20px #b19cb4, 0 0 30px #af00ca, 0 0 40px #af00ca;
+  }
+}
+
+/* Agrega estilos a la clase scores-container */
+.scores-container {
+  margin-top: 20px;
+}
+.timer p {
+  font-size: 30px;
+  text-align: right; /* Alinea el texto a la derecha */
+  margin: 0;
+  color: red;
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
+
